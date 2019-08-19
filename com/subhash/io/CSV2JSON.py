@@ -1,6 +1,6 @@
 import csv
 import json
-
+import random
 
 if __name__ == "__main__":
     inFile = open("resources/users.csv", "r")
@@ -10,5 +10,10 @@ if __name__ == "__main__":
     reader = csv.DictReader(inFile, headers)
 
     for record in reader:
+        # update age randomly
+        new_age = random.randint(30, 40)
+        record["Age"] = new_age
+
+        # save record to jason file
         json.dump(record, outFile)
         outFile.write("\n")
