@@ -12,3 +12,6 @@ python -m com.subhash.concurrency.CSV2JSON
     2. ~/.aws/credentails - file containing default aws_access_key_id and aws_secret_access_key
     3. ~/.aws/config - file containing default region
 python -m com.subhash.aws.s3
+
+4. Basics: parsing program arguments
+python -m com.subhash.basics.args_parsing --name Subhash --msg  hello
