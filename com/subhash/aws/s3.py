@@ -1,6 +1,9 @@
 import boto3
 import uuid
 
+
+# A configured AWS user (using ~/.aws/credentials and config file) must have AmazonS3FullAccess permissions
+
 # low level api for more control
 # - good performance but complex and less readable code
 # generated from JSON service definition file

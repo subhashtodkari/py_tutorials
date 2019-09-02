@@ -15,3 +15,13 @@ python -m com.subhash.aws.s3
 
 4. Basics: parsing program arguments
 python -m com.subhash.basics.args_parsing --name Subhash --msg  hello
+
+5. aws - various sqs operations like send, receive and delete message - you must have
+    1. boto3 installed
+    2. ~/.aws/credentails - file containing default aws_access_key_id and aws_secret_access_key
+    3. ~/.aws/config - file containing default region
+    4. and a queue created in AWS account
+python -m com.subhash.aws.sqs
+python -m com.subhash.aws.sqs -h
+python -m com.subhash.aws.sqs --cmd send
+python -m com.subhash.aws.sqs --cmd --rec
