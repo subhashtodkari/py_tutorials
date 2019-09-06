@@ -2,7 +2,12 @@
 
 # define class with private, public, static and class methods
 
-class Person:
+class Animal:
+    def getType(self):
+        return "Animal"
+
+
+class Person(Animal):
 
     # pass - use 'pass' keyword to avoid errors because of incomplete code
 
@@ -27,6 +32,9 @@ class Person:
         obj.name = name
         return obj;
 
+    def getType(self):
+        return "Person"
+
 
 if __name__ == "__main__":
     print('Persons always have ', Person.num_of_hands, ' hands')
@@ -39,3 +47,9 @@ if __name__ == "__main__":
 
     p2 = Person.with_name("SUBHASH")
     print(p2.name)
+
+    print(p2.name, ' is of type: ', p2.getType())
+
+    a = Animal()
+    a.name_new = 'some animal' # OMG what is this? you can add new attributes to objects anytime!!! :O
+    print(a.name_new, ' is of type: ', a.getType())
