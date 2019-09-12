@@ -54,6 +54,14 @@ python -m com.subhash.basics.loops
 7. Python Basics - collections/containers
     1. arrays
     2. Counters
+    3. map/dict
+    4. list
+    5. set
 
 python -m com.subhash.basics.collections
 
+
+8. Python Basics - properties or configuration files
+    1. write configuration file - using configparser
+
+python -m com.subhash.basics.properties

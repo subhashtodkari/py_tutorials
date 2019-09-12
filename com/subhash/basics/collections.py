@@ -35,6 +35,11 @@ def how_to_use_sets():
     s.update(arr)
     print("Set after update(arr) s: ", s)
 
+    print("iterate over a set")
+    # iterate over list
+    for k in s:
+        print(k)
+
 
 def how_to_use_lists():
     ll = list()
@@ -53,6 +58,11 @@ def how_to_use_lists():
     ll.insert(0, "first")
     print("List after insert(0, ", "First", ") ll: ", ll)
 
+    print("iterate over a list")
+    # iterate over list
+    for k in ll:
+        print(k)
+
 
 def how_to_use_map_or_dict():
     d = dict()
@@ -70,6 +80,11 @@ def how_to_use_map_or_dict():
     print("Dictionary: after pop(1): ", d)
     d.update({10: "ten", 20: "twenty", 30: "thirty"})
     print("Dictionary: after update(another dict): ", d)
+
+    print("iterate over a dict")
+    # iterate over dict
+    for k in d:
+        print(k, " => ", d[k])
 
 
 def how_to_use_counters():
