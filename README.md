@@ -65,3 +65,14 @@ python -m com.subhash.basics.collections
     1. write configuration file - using configparser
 
 python -m com.subhash.basics.properties
+
+
+9. aws - DynamoDB tutorial
+    1. create or access table
+    2. add item
+    3. search item
+    4. delete item
+    5. delete table
+
+python -m com.subhash.aws.dynamodb
+
