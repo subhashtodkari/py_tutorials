@@ -77,7 +77,7 @@ python -m com.subhash.basics.properties
 python -m com.subhash.aws.dynamodb
 
 
-10. com.subhash.util package - hold common library objects
+10. com.subhash.util package - holds common library objects
     1. number_to_words - converts number to words in chunks of billions
 
 
@@ -86,9 +86,16 @@ python -m com.subhash.aws.dynamodb
         1. text_to_speech - text to speech converter using gTTS (Google Text To Speech) API
             It caches audio data into files and reuse them if available
             reference - https://www.geeksforgeeks.org/convert-text-speech-python/
+            pip install gTTS
         2. speech_to_text__mic_input - speech recognizer - listens to mic input and converts speech to text
             using speech_recognizer library
             reference - https://realpython.com/python-speech-recognition/
+            pip install SpeechRecognition
+            pip install pyaudio (known issues for python 3.6+ on windows
+                - pip install pipwin
+                - pipwin install pyaudio
+                )
+
         3. speech_to_text__file_input - speech recognizer - listens to audio file input and converts speech to text
             using speech_recognizer library
             reference - https://realpython.com/python-speech-recognition/
