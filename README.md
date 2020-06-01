@@ -81,3 +81,16 @@ python -m com.subhash.aws.dynamodb
     1. number_to_words - converts number to words in chunks of billions
 
 
+11. Artificial Intelligence - all code under com.subhash.ai
+    com.subhash.ai.util - contains library objects for other AI programs
+        1. text_to_speech - text to speech converter using gTTS (Google Text To Speech) API
+            It caches audio data into files and reuse them if available
+            reference - https://www.geeksforgeeks.org/convert-text-speech-python/
+        2. speech_to_text__mic_input - speech recognizer - listens to mic input and converts speech to text
+            using speech_recognizer library
+            reference - https://realpython.com/python-speech-recognition/
+        3. speech_to_text__file_input - speech recognizer - listens to audio file input and converts speech to text
+            using speech_recognizer library
+            reference - https://realpython.com/python-speech-recognition/
+
+
